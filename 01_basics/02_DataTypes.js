@@ -10,7 +10,7 @@ let name ="Sarika";
 let age = 18;
 let isLoggedIn = false ;
 
-// number => 2 to the power of 53
+// number => 2 to the power of 53(2^53)
 // bigint => when the number is very large eg: trading etc.
 // string =>""
 // boolean => true/false

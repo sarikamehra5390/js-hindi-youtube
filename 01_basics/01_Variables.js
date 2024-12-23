@@ -2,7 +2,7 @@ const accountId = 144553;
 let accountEmail = "sarika@5437.com";
 var accountPassword = "12345";
 accountCity = "Jaipur"; 
-let accountState;
+let accountState; // undefined 
 
 //  we don't use var in js because of the problem of scope in js earlier . 
 //  let has no scope proalllowed beacause it is constant 
