@@ -12,7 +12,7 @@ console.log(undefined == 0);//false
 console.log(undefined > 0); //false
 console.log(undefined < 0); //false
 
-// === strictly check values i.e, checks its datatype also
+// (===) strictly check values i.e, checks its datatype also
 //Datatypes of the number which are compared should be same 
 
 console.log("2" == 2); // true
