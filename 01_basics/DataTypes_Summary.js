@@ -47,10 +47,10 @@ let myObj = {
 }
 
 console.log("Return type of all the dataTypes : ")
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outSideTemp);
-console.log(typeof id);
-console.log(typeof heroes);
-console.log(typeof myObj);
-console.log(typeof myFunction);
+console.log(typeof scoreValue); //number 
+console.log(typeof isLoggedIn); // boolean
+console.log(typeof outSideTemp); // object
+console.log(typeof id); // symbol
+console.log(typeof heroes); // object
+console.log(typeof myObj); //object
+console.log(typeof myFunction); //function
