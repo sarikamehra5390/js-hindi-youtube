@@ -54,3 +54,31 @@ console.log(typeof id); // symbol
 console.log(typeof heroes); // object
 console.log(typeof myObj); //object
 console.log(typeof myFunction); //function
+
+
+//**********************************************************
+
+//Stack(Primitive) --> we get a copy of the value 
+//  Heap(Non-Primitive) --> we get the reference of the value
+
+let myYtbName = "sarikaMehradotcom";
+let anotherName = myYtbName;
+anotherName = "chaiaurcode";
+console.log(myYtbName); //sarikaMehradotcom
+console.log(anotherName); //chaiaurcode
+
+let userOne  = {
+    email:"user@google.com",
+    upi:"user@ybl",
+
+}
+
+let userTwo = userOne; 
+userTwo.email = "Sarika@google.com";
+
+console.log(userOne.email); // "Sarika@google.com";
+console.log(userTwo.email); // "Sarika@google.com";
+
+
+
+
