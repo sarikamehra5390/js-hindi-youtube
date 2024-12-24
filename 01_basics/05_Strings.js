@@ -51,6 +51,29 @@ console.log(gameName.lastIndexOf('a')); //5 --> returns the last occurence
 
 console.log(gameName.localeCompare(anotherGameName));
 
+//This method of string values retrieves the result of matching this string against a regular expression
+const regex = /[a-z]/g;
+const regexTwo = /[a-z]/;
+console.log(gameName.match(regex));
+// [
+//     'a', 'r', 'i', 'k',
+//     'a', 's', 'm', 'c',
+//     'o', 'm'
+//   ]
+console.log(gameName.match(regexTwo));
+//[ 'a', index: 1, input: 'Sarika-sm-com', groups: undefined ]
+
+console.log(gameName.matchAll()); // need to understand it in future 
+
+console.log(gameName.normalize());
+
+console.log(gameName.padEnd());
+
+
+
+
+
+
 
 
 
