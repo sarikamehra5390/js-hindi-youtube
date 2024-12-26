@@ -17,11 +17,13 @@ let myCreateDate1 = new Date("2023-01-14");
 console.log(myCreateDate.toDateString()); // Fri Jan 13 2023
 console.log(myCreateDate1.toLocaleString()); //1/14/2023, 5:30:00 AM
 
-let myTimeStamp = Date.now();
+let myTimeStamp = Date.now(); // it provides the date of now 
 
 console.log(myTimeStamp);
-console.log(myCreateDate.getTime());
+console.log(myCreateDate.getTime()); // it povides the time of given date 
 
-console.log(Math.floor(Date.now()/1000));
+console.log(Math.floor(Date.now()/1000));// it make the time in millisec short 
+
+
 
 
