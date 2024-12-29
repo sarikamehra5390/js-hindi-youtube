@@ -77,6 +77,19 @@ console.log(Object.entries(tinderUser));//[ [ 'id', '123@abd' ], [ 'name', 'Emma
 //It returns that wheather the property exists in the object or not 
 console.log(tinderUser.hasOwnProperty('id')); // true
 
+//Destructoring 
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    couseInstructor : "Hitesh Choudhary"
+}
+
+console.log(course.couseInstructor); //Hitesh Choudhary
+
+const {couseInstructor : Instructor} = course;
+console.log(Instructor); // Hitesh Choudhary
+
+
 
 
 
