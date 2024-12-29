@@ -73,7 +73,9 @@ console.log(Object.values(tinderUser)); //  [ '123@abd', 'Emma', false]
 //It converts the objects to the array within the array with the key-value pair 
 console.log(Object.entries(tinderUser));//[ [ 'id', '123@abd' ], [ 'name', 'Emma' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('id'));
+
+//It returns that wheather the property exists in the object or not 
+console.log(tinderUser.hasOwnProperty('id')); // true
 
 
 
