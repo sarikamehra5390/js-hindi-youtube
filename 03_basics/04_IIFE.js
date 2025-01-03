@@ -5,7 +5,7 @@
     //chai is a named IIFE
     console.log(`DB CONNECTED`);
     
-})(); // We shuld always put and semicolon after a function in IIFE
+})(); // We should always put and semicolon after a function in IIFE
 // This will work same as chai() calling the function 
 
 (() => {
