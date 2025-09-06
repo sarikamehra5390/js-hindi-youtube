@@ -1,9 +1,9 @@
 How code is executed in js : 
 Javascript execution context :
-1. Global execution context(this) for brower it is window object 
+1. Global execution/environment context(this) for brower it is window object 
 2. Function or functional execution context 
 3. Eval execution context (Property of global execution)
 
 js code runs in two phases:
-1. Memory creation phase (Creation phase) --> in this a space is allocated for variables or an declaared object 
+1. Memory creation phase (Creation phase) --> in this a space is allocated for variables or an declared object 
 2. execution phase 
