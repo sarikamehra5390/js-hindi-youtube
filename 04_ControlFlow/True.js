@@ -15,7 +15,7 @@ if(userEmail){
 
 const userEmail1 = [];
 if(userEmail1.length === 0){
-    console.log("Aeeay is empty");
+    console.log("Array is empty");
     
 }
 
