@@ -10,7 +10,7 @@ const user =  {
     }
 
 }
-// Window is the global object for window
+// Window is the global object for browser
 
 user.welcomeMessage(); // Sarika , welcome to website
 //{
@@ -29,6 +29,7 @@ user.welcomeMessage();
 //   }
 
 console.log(this); //{}
+//In browser the global object is window
 
 //this is not used in functions it is ony applicable in objects 
 function chai(){
