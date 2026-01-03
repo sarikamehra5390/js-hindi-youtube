@@ -16,7 +16,7 @@
     function addLanguage(langName){
         const li = document.createElement('li');
 
-        <!--While using innerHtml kinda tags traversing of the whole tree is done which is not optimised-->
+        //While using innerHtml kinda tags traversing of the whole tree is done which is not optimised-->
 
         li.innerHTML = `${langName}`;
          document.querySelector('.language').appendChild(li);
@@ -26,7 +26,7 @@
     addLanguage("Python");
     addLanguage("TypeScript");
 
-  
+  // this is same but more optimised way of adding text to the li element
     function addOptiLanguage(langName){
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName));
@@ -37,6 +37,7 @@
     addOptiLanguage('golang');
 
     //Edit
+
     // In JavaScript, li:nth-child() refers to a CSS pseudo-class that is used to select elements based on their position within a parent element. Specifically, li:nth-child() is targeting the li (list item) elements that are in a certain position in the list. This can be useful when you want to apply styles or behaviors to specific elements within a list based on their order.
      const secondLang = document.querySelector("li:nth-child(3)");
      console.log(secondLang);
@@ -50,7 +51,7 @@
 
 
      // Remove
-     const lastLang = document.querySelector("li:first-child");
+     const lastLang = document.querySelector("li:last-child");
      lastLang.remove();
 
 </script>
