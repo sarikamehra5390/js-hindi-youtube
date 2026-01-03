@@ -15,12 +15,15 @@
     div.className = "main";
     div.id = Math.round(Math.random() * 10 + 1);
 
-    <!--This is preferbly used becoz it set the value inplace -->
+    //This is preferbly used becoz it set the value inplace -->
     div.setAttribute("title" , "generated title");
 
     div.style.backgroundColor = "green";
     div.style.padding = "12px";
+
+    //both this innertext and createTextNode are used to add text to the div 
     div.innerText = "chai aur code ";
+
     const addText = document.createTextNode(" with javascript learning");
     div.appendChild(addText);
 

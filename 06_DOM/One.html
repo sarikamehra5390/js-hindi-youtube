@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM | Chai and code</title>
 </head>
+
+<!--innerText shows only the visible content  
+textContent shows the hidden content of the text which are not visible on the screen 
+innerHTML shows the html tag also along with the content-->
+
+<!--Array ,Nodelist and HtmlCollection are different ways to access elements in the DOM -->
+
+<!--to convert htmlCollection to array we use Array.from() method --> 
+
 <body style="background-color :#212121 ; color : #fff">
     <div class="parent">
         <!--here we are adding a comment-->
@@ -18,6 +27,9 @@
 <script>
    const parent = document.querySelector('.parent');
    console.log(parent);
+
+//children give htmlCollection of all the child elements of the parent element , it is a array like structure so we can use array methods on it 
+
    console.log(parent.children);
    console.log(parent.children[1].innerHTML);
 
@@ -34,8 +46,11 @@
    console.log(dayOne.parentElement);
    console.log(dayOne.nextElementSibling);
 
-   <!--Here we are discussing about the node list-->
+   //Here we are discussing about the node list and child nodes
+
    console.log("NODES : ", parent.childNodes);
+
+   
 
 
 </script>
