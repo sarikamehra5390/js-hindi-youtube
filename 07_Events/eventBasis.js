@@ -1,0 +1,3 @@
+//javascript is a sequential programming language which means it executes code line by line from top to bottom. However, there are certain scenarios where we want to execute code based on specific events or user interactions. This is where event handling comes into play in JavaScript.
+
+// An event is an action or occurrence that happens in the system you are programming, which the system tells you about so your code can respond to it. Examples of events include user actions like clicks, key presses, mouse movements, and form submissions.

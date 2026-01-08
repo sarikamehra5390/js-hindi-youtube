@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style = "background-color: #414141; color : aliceblue;">
+      <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    //this approach mayhave problems as we are using onclick events which gives less features.
+    //document.getElementById('owl').onclick = function(){
+     //   alert('You clicked on owl image');
+   // }
+     
+   
+   //attachEvent() is used in older versions of internet explorer.
+   //Modern browsers use addEventListener() method to attach event handlers to elements.
+   //jQuery uses on() method to attach event handlers to elements.
+
+   // Need to learn about events : type , timestamp , defaultPrevented 
+   //target , toElement , sourceElement , currentTarget , relatedTarget etc.
+   //clientX , clientY , pageX , pageY , screenX , screenY etc.
+   //altKey , ctrlKey , shiftKey , keyCode ,metaKey etc.
+
+
+
+//    document.getElementById('images').addEventListener('click',function(e){
+//      console.log("click inside the ul");
+//    }, false);
+
+//    //false means event bubbling mode ( from inner to outer)
+//    //true means event capturing mode ( from outer to inner)
+//    //In this case we are using event bubbling mode. which is default mode.
+
+//    document.getElementById('owl').addEventListener('click',function(e){
+//      console.log("owl image clicked");
+//      e.stopPropagation(); // to stop event bubbling 
+//    }, false)
+
+//     document.getElementById('google').addEventListener('click',function(e){
+//        e.preventDefault(); // to prevent default action of anchor tag
+//        e.stopPropagation(); // to stop event bubbling
+//        console.log("going to google");
+//     },false)
+
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.parentNode);
+    let removeIt = e.target.parentNode;
+   // removeIt.remove();
+   //removeIt.parentNode.removeChild(removeIt);
+},false);
+
+
+</script>
+</html>
