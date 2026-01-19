@@ -56,11 +56,42 @@
 //     },false)
 
 document.querySelector('#images').addEventListener('click',function(e){
-    console.log(e.target.parentNode);
-    let removeIt = e.target.parentNode;
-   // removeIt.remove();
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+    }
+    
    //removeIt.parentNode.removeChild(removeIt);
 },false);
+
+/*Async Code : javascript is synchronous language which means it can execute code without blocking the main thread.which means it can execute code sequentially.
+it is a single threaded language which means it can execute only one task at a time.
+execution context : it is the environment in which the code is executed.
+call stack : it is a data structure which is used to keep track of the execution contexts.
+browser global execution context : it is the default execution context which is created when the javascript code is executed in the browser. 
+function execution context : it is created when a function is called.
+Eval ececution context : it is created when the eval() function is called.
+memory phase : it is the phase in which the memory is allocated for the variables and functions.
+execution phase : it is the phase in which the code is executed line by line.
+
+steps:
+1.global execution context is created.this is executed under this window object.
+2.Memory phase is executed in which memory is allocated for the variables and functions.
+3.Execution phase is executed in which the code is executed line by line.
+
+execute one line of code at a time.
+each operation waits for the previous operation to complete before executing.
+
+blocking code vs non blocking code :
+blocking code : it is the code which blocks the main thread until the operation is completed.
+non blocking code : it is the code which does not block the main thread and allows other operations to be executed while waiting for the operation to complete.
+ 
+//fetch () api : it is a web api which is used to make network requests.it has high priority in the event loop.it has promise based api.
+
+
+*/
 
 
 </script>
