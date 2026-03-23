@@ -31,3 +31,7 @@ const masalaChai = new User("masalaChai");
 //masalaChai.addCourse();
 
 masalaChai.logMe();
+
+console.log(chai === masalaChai);
+
+console.log(chai instanceof Teacher);

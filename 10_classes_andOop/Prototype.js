@@ -68,3 +68,6 @@ String.prototype.trueLength = function(){
 anotherUsername.trueLength();
 "Sarika".trueLength(); //6
 "IceTea".trueLength(); //6
+
+//In browser {this = window}
+// In node environment it is = {}
