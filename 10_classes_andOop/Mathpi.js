@@ -18,10 +18,12 @@ console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 // console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
 
-for (const [key, value] of chai) {
+for (const [key, value] of Object.entries(chai)) {
     console.log(`${key} : ${value}`);
     
-    
 }
+
+// enumerable : means we can apply loop for this and repeat it 
+// configurable: means we can modify the values 
 
 
